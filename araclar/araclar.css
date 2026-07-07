@@ -1,0 +1,271 @@
+
+.arac-detay-sayfa {
+    padding-top: 0;
+}
+
+.arac-hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.arac-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.arac-hero-overlay {
+    inset: 0;
+}
+.arac-hero-fore {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 11;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.arac-hero-icerik {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 40px;
+}
+
+
+.arac-hero-baslik {
+    font-size: 220px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0 0 24px;
+    text-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    letter-spacing: -1px;
+}
+
+
+.arac-ozellikler {
+    padding: 120px 0;
+    background: #000;
+}
+
+.arac-ozellikler-baslik {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.arac-ozellikler-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.arac-ozellik-karti {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+}
+
+.arac-ozellik-gorsel {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.arac-ozellik-gorsel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+    position: relative;
+    z-index: 3; 
+    display: block;
+}
+
+.arac-ozellik-karti:hover .arac-ozellik-gorsel img {
+    transform: scale(1.12);
+}
+
+.arac-ozellik-karti:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 6px 18px rgba(255,255,255,0.02) inset;
+}
+
+.arac-ozellik-gorsel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0) 100%);
+    transform: translateX(-120%) skewX(-20deg);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.arac-ozellik-gorsel:hover::after,
+.arac-ozellik-karti:hover .arac-ozellik-gorsel::after {
+    transform: translateX(220%) skewX(-20deg);
+}
+
+.arac-ozellik-baslik {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.arac-ozellik-aciklama {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+.arac-timeline {
+    padding: 120px 0;
+    background: #000;
+}
+
+.arac-timeline-baslik {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.timeline-div {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+}
+
+.timeline-cizgi {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, #333 5%, #333 95%, transparent);
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.timeline-kart {
+    position: relative;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.timeline-kart:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-kart:nth-child(even) .timeline-icerik {
+    text-align: right;
+}
+
+.timeline-nokta {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    border: 2px solid #444;
+    background: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.timeline-kart:hover .timeline-nokta {
+    background: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.timeline-icerik {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 400px;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-yil {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timeline-baslik {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.timeline-aciklama {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.bolum-etiket {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: #888;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.arac-ozellikler .bolum-etiket,
+.arac-timeline .bolum-etiket,
+.arac-ozellikler .bolum-baslik,
+.arac-timeline .bolum-baslik {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

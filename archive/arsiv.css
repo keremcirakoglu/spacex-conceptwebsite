@@ -1,0 +1,140 @@
+body {
+    color: #fff;
+}
+
+.arsiv-bg {
+    background-image: url('../images/old.jpg');
+}
+
+.arsiv-icerik {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.arsiv-baslik {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.arsiv-altbaslik {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.arsiv-tablo {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.arsiv-tablo thead {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.arsiv-tablo th {
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+
+.arsiv-tablo td {
+    padding: 18px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.arsiv-tablo tbody tr {
+    transition: all 0.3s ease;
+}
+
+.arsiv-tablo tbody tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.arsiv-tablo tbody tr:hover td {
+    color: #fff;
+}
+
+.gorev-adi {
+    font-weight: 500;
+}
+
+.gorev-tarih {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.gorev-arac {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gorev-konum {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;
+}
+
+.gorev-durum {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.gorev-durum.basarili {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sayfalar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sayfa-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.sayfa-link:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.sayfa-link.aktif {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.sayfa-link.ok {
+    width: auto;
+    padding: 0 15px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+

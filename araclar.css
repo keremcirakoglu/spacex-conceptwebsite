@@ -1,0 +1,143 @@
+.araclar-sayfa {
+    overflow-x: hidden;
+}
+
+.arac {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.arac-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.arac-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.6) 100%);
+    z-index: 1;
+}
+
+.arac-icerik {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 40px 25px;
+}
+
+.arac-etiket {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.arac-baslik {
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0 0 25px;
+    color: #fff;
+}
+
+.arac-aciklama {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #bbb;
+    margin: 0 0 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arac-istatistikler {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.istatistik {
+    text-align: center;
+}
+
+.istatistik-deger {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.istatistik-etiket {
+    font-size: 12px;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.arac-buton {
+    display: inline-block;
+    padding: 14px 32px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.arac-buton:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #000;
+}
+
+.kaydir {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.kaydir-ok {
+    width: 24px;
+    height: 24px;
+    margin: 12px auto 0;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(45deg);
+    animation: animasyon-bounce 2s infinite;
+}
+
+@keyframes animasyon-bounce {
+    0%, 100% { transform: rotate(45deg) translateY(0); opacity: 1; }
+    50% { transform: rotate(45deg) translateY(8px); opacity: 0.5; }
+}
+
+nav a.active {
+    color: #fff;
+}

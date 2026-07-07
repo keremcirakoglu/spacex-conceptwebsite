@@ -1,0 +1,87 @@
+.galeri-sayfa {
+    padding-top: 0;
+}
+
+.galeri-bg {
+    background-image: url('images/tarihce/8.jpg');
+}
+
+.galeri-ana {
+    padding: 80px 40px;
+    background: var(--arkaplan);
+}
+
+.galeri-table {
+    columns: 3;
+    column-gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.galeri-item {
+    break-inside: avoid;
+    margin-bottom: 25px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.galeri-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.galeri-item:hover img {
+    transform: scale(1.1);
+}
+
+.galeri-item-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.galeri-item:hover .galeri-item-overlay {
+    opacity: 1;
+}
+
+.galeri-item-overlay h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.galeri-item:hover .galeri-item-overlay h3 {
+    transform: translateY(0);
+}
+
+.galeri-item-overlay p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    transform: translateY(20px);
+    transition: transform 0.4s ease 0.1s;
+}
+
+.galeri-item:hover .galeri-item-overlay p {
+    transform: translateY(0);
+}
+
+.galeri-item.buyuk {
+    break-inside: avoid;
+}
+
+.galeri-item.buyuk img {
+    min-height: 400px;
+    object-fit: cover;
+}

@@ -1,0 +1,103 @@
+
+
+.market-urunler {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.urunler-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+    width: 80%;
+}
+
+.urun-kart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: none;
+    padding: 3%;
+}
+
+.urun-gorsel img {
+    width: 100%;
+    display: block;
+}
+
+.urun-kart:nth-child(1):hover .urun-gorsel img {
+    content: url('images/market/urun1h.webp');
+}
+.urun-kart:nth-child(2):hover .urun-gorsel img {
+    content: url('images/market/urun2h.webp');
+}
+.urun-kart:nth-child(3):hover .urun-gorsel img {
+    content: url('images/market/urun3h.webp');
+}
+.urun-kart:nth-child(4):hover .urun-gorsel img {
+    content: url('images/market/urun4h.webp');
+}
+.urun-kart:nth-child(5):hover .urun-gorsel img {
+    content: url('images/market/urun5h.webp');
+}
+.urun-kart:nth-child(6):hover .urun-gorsel img {
+    content: url('images/market/urun6h.webp');
+}
+.urun-kart:nth-child(7):hover .urun-gorsel img {
+    content: url('images/market/urun7h.webp');
+}
+.urun-kart:nth-child(8):hover .urun-gorsel img {
+    content: url('images/market/urun8h.webp');
+}
+.urun-kart:nth-child(9):hover .urun-gorsel img {
+    content: url('images/market/urun9h.webp');
+}
+.urun-kart:nth-child(10):hover .urun-gorsel img {
+    content: url('images/market/urun10h.webp');
+}
+.urun-kart:nth-child(11):hover .urun-gorsel img {
+    content: url('images/market/urun11h.webp');
+}
+.urun-kart:nth-child(12):hover .urun-gorsel img {
+    content: url('images/market/urun12h.webp');
+}
+.urun-kart:nth-child(13):hover .urun-gorsel img {
+    content: url('images/market/urun13h.webp');
+}
+.urun-kart:nth-child(14):hover .urun-gorsel img {
+    content: url('images/market/urun14h.webp');
+}
+.urun-kart:nth-child(15):hover .urun-gorsel img {
+    content: url('images/market/urun15h.webp');
+}
+.urun-kart:nth-child(16):hover .urun-gorsel img {
+    content: url('images/market/urun16h.webp');
+}
+.urun-kart:nth-child(17):hover .urun-gorsel img {
+    content: url('images/market/urun17h.webp');
+}
+.urun-kart:nth-child(18):hover .urun-gorsel img {
+    content: url('images/market/urun18h.webp');
+}
+.urun-kart:nth-child(19):hover .urun-gorsel img {
+    content: url('images/market/urun19h.webp');
+}
+.urun-kart:nth-child(20):hover .urun-gorsel img {
+    content: url('images/market/urun20h.webp');
+}
+.urun-bilgi {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #222;
+    text-align: center;
+}
+.sayfa-banner-bg.market-bg {
+    background-image: url('images/market/market.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}

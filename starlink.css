@@ -1,0 +1,103 @@
+.hero2-ana {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-left: 700px;
+    margin-bottom: 400px;
+}
+
+.hero2-baslik {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.05;
+    margin: 0 0 24px;
+    color: #fff;
+}
+
+.starlink-hero {
+    background: #000;
+    padding: 120px 0 80px;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.starlink-hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.starlink-hero-content {
+    color: #fff;
+}
+
+.starlink-hero-baslik {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #fff 0%, #a0a0a0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.starlink-hero-aciklama {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.starlink-hero-istatistikler {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.starlink-stat {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-deger {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.stat-etiket {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.starlink-hero-gorsel {
+    position: relative;
+}
+
+.starlink-hero-gorsel img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.starlink-hero-gorsel:hover img {
+    transform: scale(1.02);
+}

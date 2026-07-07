@@ -1,0 +1,430 @@
+.gorev-detay-sayfa {
+    padding-top: 0;
+}
+
+.gorev-hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gorev-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.gorev-hero-div {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(10, 10, 10, 1) 100%
+    );
+}
+
+.gorev-hero-icerik {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 40px;
+}
+
+.gorev-rozet {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.gorev-rozet.basarili {
+    background: rgba(34, 197, 94, 0.15);
+    border-color: rgba(34, 197, 94, 0.3);
+    color: #49e482;
+}
+
+.gorev-rozet.devam {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.gorev-hero-baslik {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.gorev-hero-altbaslik {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.gorev-hero-butonlar {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gorev-buton {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 38px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.gorev-buton.birincil {
+    background: #fff;
+    color: #000;
+}
+
+.gorev-buton.birincil:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.gorev-buton.ikincil {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.gorev-buton.ikincil:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.gorev-buton svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.gorev-bilgi-bolum {
+    padding: 80px 40px;
+    background: var(--arkaplan);
+}
+
+.gorev-bilgi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gorev-bilgi-kart {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.gorev-bilgi-kart:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.gorev-bilgi-ikon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+.gorev-bilgi-ikon svg {
+    width: 24px;
+    height: 24px;
+    fill: rgba(255, 255, 255, 0.7);
+}
+
+.gorev-bilgi-etiket {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 8px;
+}
+
+.gorev-bilgi-deger {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.gorev-plan-bolum {
+    padding: 100px 40px;
+    background: linear-gradient(to bottom, var(--arkaplan), rgba(255, 255, 255, 0.02));
+}
+
+.gorev-plan-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bolum-ust-baslik {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.bolum-ust-baslik h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.bolum-ust-baslik p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.gorev-plan-gorsel {
+    position: relative;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+}
+
+.gorev-plan-gorsel img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    padding: 0;
+    display: block;
+}
+
+.gorev-timeline-bolum {
+    padding: 100px 40px;
+    background: var(--arkaplan);
+}
+
+.gorev-timeline-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.1)
+    );
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -44px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--arkaplan), 0 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.timeline-item.tamamlandi::before {
+    background: #4ade80;
+    box-shadow: 0 0 0 4px var(--arkaplan), 0 0 0 6px rgba(74, 222, 128, 0.3);
+}
+
+.timeline-item.aktif::before {
+    background: #fff;
+    box-shadow: 0 0 0 4px var(--arkaplan), 0 0 0 6px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.3);
+    animation: nabiz 2s ease-in-out infinite;
+}
+
+@keyframes nabiz {
+    0%, 100% {
+        box-shadow: 0 0 0 4px var(--arkaplan), 0 0 0 6px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 0 4px var(--arkaplan), 0 0 0 8px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.timeline-item.beklemede::before {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 4px var(--arkaplan), 0 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.timeline-zaman {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 8px;
+}
+
+.timeline-baslik {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.timeline-aciklama {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.gorev-detaylar-bolum {
+    padding: 100px 40px;
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gorev-detaylar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.detay-blok {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.detay-blok h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 0 30px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detay-liste {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detay-liste li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.detay-liste li:last-child {
+    border-bottom: none;
+}
+
+.detay-liste .etiket {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+.detay-liste .deger {
+    font-weight: 600;
+    text-align: right;
+}
+
+.astronotlar-bolum {
+    margin: 48px 0 24px 0;
+    display: flex;
+    justify-content: center;
+}
+.astronotlar-grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+}
+.astronot-kart {
+    background: #181a20;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    padding: 20px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.15s, transform 0.15s;
+    color: #181a20;
+}
+.astronot-kart:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    transform: translateY(60px);
+    color: #fff;
+}
+.astronot-foto {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: -50px;
+    margin-top: -110px;
+    border: 4px solid #2d313a;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    z-index: 2;
+    position: relative;
+    transition: transform 0.15s;
+}
+.astronot-kart:hover .astronot-foto {
+    transform: translateY(-60px) scale(1.03);
+}

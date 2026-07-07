@@ -1,0 +1,309 @@
+:root {
+    --arkaplan: #0a0a0a;
+    --metin: #f0f0f0;
+    --vurgu: #ffffff;
+    --vurgu-acik: #cccccc;
+    --kenarlik: rgba(255, 255, 255, 0.08);
+}
+
+.hakkinda-bg {
+    background: url('images/hakkında.avif') center center / cover no-repeat;
+}
+
+.bolum-etiket {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.bolum-baslik {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hakkinda-misyon {
+    padding: 100px 0;
+    background: var(--arkaplan);
+}
+
+.hakkinda-kapsayici {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.misyon-icerik {
+    padding-right: 20px;
+}
+
+.misyon-aciklama {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+}
+
+.misyon-gorsel {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--kenarlik);
+    transition: all 0.4s ease;
+}
+
+.misyon-gorsel:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.misyon-gorsel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.misyon-gorsel:hover img {
+    transform: scale(1.05);
+}
+
+.hakkinda-degerler {
+    padding: 100px 40px;
+    background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+}
+
+.degerler-baslik {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.degerler-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.deger-card {
+    background: #111;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+
+.deger-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%, transparent 50%, rgba(255,255,255,0.05) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.deger-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 255, 255, 0.03);
+}
+
+.deger-gorsel {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.deger-gorsel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(17, 17, 17, 1) 100%);
+    pointer-events: none;
+}
+
+.deger-gorsel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease;
+    filter: brightness(0.9);
+}
+
+.deger-card:hover .deger-gorsel img {
+    transform: scale(1.15);
+    filter: brightness(1);
+}
+
+.deger-icerik {
+    padding: 24px 28px 28px;
+    position: relative;
+}
+
+.deger-numara {
+    position: absolute;
+    top: -50px;
+    right: 20px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.05);
+    line-height: 1;
+    transition: color 0.4s ease;
+}
+
+.deger-card:hover .deger-numara {
+    color: rgba(255, 255, 255, 1);
+}
+
+.deger-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.deger-card:hover h3 {
+    color: #fff;
+}
+
+.deger-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin: 0;
+}
+
+.hakkinda-istatistikler {
+    padding: 80px 40px;
+    background: var(--arkaplan);
+}
+
+.istatistik-kapsayici {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.istatistik-oge {
+    text-align: center;
+    padding: 0 30px;
+}
+
+.istatistik-sayi {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.istatistik-etiket {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.istatistik-ayirici {
+    width: 1px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hakkinda-galeri-bolum {
+    padding: 100px 40px;
+    background: #0a0a0a;
+}
+
+.galeri-baslik {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.galeri-oge {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid var(--kenarlik);
+    transition: all 0.4s ease;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.galeri-oge:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.galeri-oge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.galeri-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.galeri-overlay span {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.galeri-oge:hover img {
+    transform: scale(1.1);
+}
+
+.galeri-oge:hover .galeri-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.galeri-buyuk {
+    grid-column: span 2;
+    grid-row: span 2;
+}
